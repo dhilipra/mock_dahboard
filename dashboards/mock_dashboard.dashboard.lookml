@@ -1,5 +1,5 @@
 - dashboard: mock_dashboard
-  title: 'At a glance '
+  title: 'Mock Dashboard '
   layout: newspaper
   preferred_viewer: dashboards-next
   elements:
