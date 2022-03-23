@@ -76,4 +76,9 @@ view: final_data {
     type: sum
     sql: ${TABLE}.open_claim ;;
   }
+
+  measure: CSAT_percent {
+    type: sum
+    sql: ${TABLE}.csat ;;
+  }
 }
