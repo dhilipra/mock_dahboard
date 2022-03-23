@@ -71,4 +71,9 @@ view: final_data {
     type: sum
     sql: ${TABLE}.warranty_costs ;;
   }
+
+  measure: sum_open_claim {
+    type: sum
+    sql: ${TABLE}.open_claim ;;
+  }
 }
