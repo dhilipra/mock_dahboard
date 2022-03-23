@@ -2,6 +2,7 @@ connection: "mock_dashboard"
 
 # include all the views
 include: "/views/**/*.view"
+include: "/dashboards/**/*.dashboard.lookml"
 
 datagroup: mock_dashboard_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
