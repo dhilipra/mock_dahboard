@@ -62,6 +62,16 @@ view: final_data {
     sql: ${TABLE}.warranty_costs ;;
   }
 
+  dimension: warranty_manager_name {
+    type: string
+    sql: ${TABLE}.warranty_manager_name ;;
+  }
+
+  dimension: region {
+    type: string
+    sql: ${TABLE}.region ;;
+  }
+
 
   measure: count {
     type: count
