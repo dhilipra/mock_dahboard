@@ -76,4 +76,10 @@ view: final_data {
     type: sum
     sql: ${TABLE}.open_claim ;;
   }
+
+  measure: percent_in_warranty_count {
+    type: percent_of_total
+    sql: ${count} ;;
+  }
+
 }
