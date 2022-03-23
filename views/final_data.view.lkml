@@ -87,4 +87,9 @@ view: final_data {
     sql: ${count} ;;
   }
 
+  measure: sum_in_warranty {
+    type: sum
+    sql: ${TABLE}.in_warranty ;;
+  }
+
 }
