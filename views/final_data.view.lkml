@@ -66,4 +66,12 @@ view: final_data {
     type: count
     drill_fields: []
   }
+
+  measure: sum_waranty {
+    type: sum
+    sql: ${TABLE}.warranty_costs ;;
+  }
+
+
+
 }
