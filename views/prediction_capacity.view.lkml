@@ -22,7 +22,7 @@ view: prediction_capacity {
     sql: ${TABLE}.region ;;
   }
 
-  dimension: service_capacity {
+  measure: service_capacity {
     type: number
     sql: ${TABLE}.service_capacity ;;
   }
