@@ -11,3 +11,4 @@ datagroup: mock_dashboard_default_datagroup {
 persist_with: mock_dashboard_default_datagroup
 
 explore: final_data {}
+explore: prediction_likelihood {}
