@@ -12,6 +12,21 @@ view: prediction_likelihood {
     sql: ${TABLE}.city ;;
   }
 
+  dimension: latitude {
+    type: number
+    sql: ${TABLE}.latitude ;;
+  }
+  dimension: longitude {
+    type: number
+    sql: ${TABLE}.longitude ;;
+  }
+
+  dimension: city_location {
+    type: location
+    sql_latitude: ${TABLE}.latitude ;;
+    sql_longitude: ${TABLE}.longitude  ;;
+  }
+
   dimension: drive {
     type: string
     sql: ${TABLE}.drive ;;
