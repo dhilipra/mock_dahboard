@@ -2,6 +2,7 @@
   title: 'Mock Dashboard '
   layout: newspaper
   preferred_viewer: dashboards-next
+
   elements:
   - title: New Tile
     name: New Tile
