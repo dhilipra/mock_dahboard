@@ -49,12 +49,6 @@ view: prediction_likelihood {
     #value_format_name: "#"
   }
 
-  dimension: city_location {
-    type: location
-    sql_latitude: 0 ;;
-    sql_longitude: 0 ;;
-  }
-
   measure: count {
     type: count
     drill_fields: []
