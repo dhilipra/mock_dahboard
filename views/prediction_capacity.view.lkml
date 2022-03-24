@@ -31,4 +31,9 @@ view: prediction_capacity {
     type: count
     drill_fields: []
   }
+
+  measure: capacity {
+    type: sum
+    sql: ${TABLE}.service_capacity ;;
+  }
 }
