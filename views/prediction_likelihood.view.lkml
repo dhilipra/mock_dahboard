@@ -43,6 +43,12 @@ view: prediction_likelihood {
     #value_format_name: "#"
   }
 
+  dimension: Total_repair_cost{
+    type: number
+    sql: 28100000 ;;
+    #value_format_name: "#"
+  }
+
 
   measure: count {
     type: count
