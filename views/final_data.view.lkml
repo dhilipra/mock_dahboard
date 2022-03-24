@@ -71,7 +71,11 @@ view: final_data {
     type: string
     sql: ${TABLE}.region ;;
   }
-
+  dimension: date_march{
+    type: string
+    sql: "March 2022" ;;
+    #value_format_name: "#"
+  }
 
   measure: count {
     type: count
