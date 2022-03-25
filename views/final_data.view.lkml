@@ -71,11 +71,6 @@ view: final_data {
     type: string
     sql: ${TABLE}.region ;;
   }
-  dimension: date_march{
-    type: string
-    sql: "March 2022" ;;
-    #value_format_name: "#"
-  }
 
   measure: count {
     type: count
@@ -105,6 +100,13 @@ view: final_data {
   measure: sum_in_warranty {
     type: sum
     sql: ${TABLE}.in_warranty ;;
+  }
+
+  measure: last_updated_date {
+    type: date
+    sql: MAX(${TABLE}.date) ;;
+    convert_tz: no
+    html: {{ rendered_value | append: "-01" | date: "%B %Y" }};;
   }
 
 }
