@@ -1,5 +1,5 @@
 view: customer_view {
-  sql_table_name: `mock_dashboard.customer_view`
+  sql_table_name: `mock_dashboard.Prediction_likelihood`
     ;;
 
   dimension: body_type {
