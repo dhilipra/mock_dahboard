@@ -68,4 +68,31 @@ view: prediction_likelihood {
     type: count
     drill_fields: []
   }
+
+  dimension: failure_category {
+    type: string
+    sql: ${TABLE}.failure_category ;;
+  }
+
+
+  dimension: repair_cost {
+    type: number
+    sql: ${TABLE}.repair_cost ;;
+  }
+
+  dimension: risk_label {
+    type: string
+    sql: ${TABLE}.risk_label ;;
+  }
+
+  dimension: risk_level {
+    type: number
+    sql: ${TABLE}.risk_level ;;
+  }
+
+
+  dimension: type_of_failure {
+    type: string
+    sql: ${TABLE}.type_of_failure ;;
+  }
 }
