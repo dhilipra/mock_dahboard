@@ -88,4 +88,10 @@ view: prediction_likelihood {
     type: sum
     sql: ${TABLE}.repair_cost ;;
   }
+
+  measure: count_likelihood_to_fail_75 {
+    type: count
+    filters: [likelihood_to_fail: "> 75%"]
+  }
+
 }
