@@ -31,18 +31,34 @@ view: customer_view {
     sql: PA;;
   }
 
+  dimension: miles_per_gallon {
+    type: number
+    sql: 5.39;;
+  }
+
+  dimension: speed {
+    type: number
+    sql: 53.55;;
+  }
+
+  dimension: engine_RPM {
+    type: number
+    sql: 662.76;;
+  }
+
   measure: average_miles_per_gallon {
     type: sum
-    sql: 5.39;;
+    sql: ${TABLE}.miles_per_gallon ;;
   }
 
   measure: average_speed {
     type: sum
-    sql: 53.55;;
+    sql: ${TABLE}.speed;;
   }
 
   measure: average_engine_RPM {
     type: sum
-    sql: 662.76;;
+    sql: ${TABLE}.engine_RPM;;
   }
+
 }
