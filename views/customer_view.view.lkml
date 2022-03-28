@@ -32,17 +32,17 @@ view: customer_view {
   }
 
   measure: average_miles_per_gallon {
-    type: sum
+    type: average
     sql: 5.39 ;;
   }
 
   measure: average_speed {
-    type: sum
+    type: average
     sql: 53.55;;
   }
 
   measure: average_engine_RPM {
-    type: sum
+    type: average
     sql: 662.76;;
   }
 
