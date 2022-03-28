@@ -23,7 +23,7 @@ view: customer_view {
 
   dimension: year {
     type: number
-    sql_latitude: 2020;;
+    sql: 2020;;
   }
 
   dimension: state {
