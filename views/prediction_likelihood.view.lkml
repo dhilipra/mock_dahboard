@@ -52,18 +52,6 @@ view: prediction_likelihood {
     sql: ${TABLE}.risk_of_failure ;;
   }
 
-  dimension: Risk_Level{
-    type: number
-    sql: 2 ;;
-    #value_format_name: "#"
-  }
-
-  dimension: Total_repair_cost{
-    type: number
-    sql: 28100000 ;;
-    #value_format_name: "#"
-  }
-
   measure: count {
     type: count
     drill_fields: []
