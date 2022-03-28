@@ -83,4 +83,9 @@ view: prediction_likelihood {
     type: string
     sql: ${TABLE}.type_of_failure ;;
   }
+
+  measure: total_repair_cost {
+    type: sum
+    sql: ${TABLE}.repair_cost ;;
+  }
 }
