@@ -94,4 +94,75 @@ view: prediction_likelihood {
     filters: [likelihood_to_fail: "> 75%"]
   }
 
+
+  dimension: insight {
+
+    html:
+      {% if value == 1 %}
+<p style="text-align: center; background-color:#E9FFFF;">
+<br>
+<br>
+<br>
+<span style="color:blue">Insight</span>
+<br>
+<br>
+According to the prediction, only <span style="color:blue">700 vehicles</span> are likely to have problems before their next service appointment, while the remaining vehicles can anticipate a replacement in the next scheduled service.
+
+<br>
+<br>
+<br>
+<button type="button" style="background-color: #1589FF; border: none; border-radius: 4px;  padding: 10px; color:white">Schedule Replacement Service</button>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+      {% elsif value == 2 %}
+<p style="text-align: center; background-color:#E9FFFF;">
+<br>
+<br>
+<br>
+<span style="color:blue">Insight</span>
+<br>
+<br>
+According to the prediction, only <span style="color:blue">2531 vehicles</span> are likely to have problems before their next service appointment, while the remaining vehicles can anticipate a replacement in the next scheduled service.
+
+<br>
+<br>
+<br>
+<button type="button" style="background-color: #1589FF; border: none; border-radius: 4px;  padding: 10px; color:white">Schedule Replacement Service</button>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+      {% elsif value == 3 %}
+<p style="text-align: center; background-color:#E9FFFF;">
+<br>
+<br>
+<br>
+<span style="color:blue">Insight</span>
+<br>
+<br>
+According to the prediction, only <span style="color:blue">1500 vehicles</span> are likely to have problems before their next service appointment, while the remaining vehicles can anticipate a replacement in the next scheduled service.
+
+<br>
+<br>
+<br>
+<button type="button" style="background-color: #1589FF; border: none; border-radius: 4px;  padding: 10px; color:white">Schedule Replacement Service</button>
+<br>
+<br>
+<br>
+<br>
+</p>
+
+      {% endif %};;
+
+
+    type: string
+    sql: ${TABLE}.risk_level ;;
+  }
+
 }
