@@ -13,3 +13,4 @@ persist_with: mock_dashboard_default_datagroup
 explore: final_data {}
 explore: prediction_likelihood {}
 explore: prediction_capacity {}
+explore: customer_view {}
