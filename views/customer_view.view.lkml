@@ -4,21 +4,21 @@ view: customer_view {
 
   dimension: body_type {
     type: string
-    sql: SUV;;
+    sql: "SUV";;
   }
 
   dimension: car_name {
     type: string
-    sql: CHEVORLET EQUINOX;;
+    sql: "CHEVORLET EQUINOX";;
   }
 
   dimension: variant {
     type: string
-    sql: 2021 Equinox LS;;
+    sql: "Equinox LS";;
   }
   dimension: city {
     type: string
-    sql: PHILADELPHIA;;
+    sql: "PHILADELPHIA";;
   }
 
   dimension: year {
@@ -28,7 +28,7 @@ view: customer_view {
 
   dimension: state {
     type: string
-    sql: PA;;
+    sql: "PA";;
   }
 
   measure: average_miles_per_gallon {
